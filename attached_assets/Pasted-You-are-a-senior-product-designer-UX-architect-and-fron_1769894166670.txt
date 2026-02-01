@@ -1,0 +1,101 @@
+You are a senior product designer, UX architect, and frontend engineer
+specializing in high‑end fintech dashboards and AI observability platforms.
+
+Your task is to perform a FULL NUX + UI/UX REVAMP of an existing
+agentic AI dashboard called "Sentinel AI".
+
+The backend logic, agent loop, and APIs already exist.
+Your focus is on USER EXPERIENCE, VISUAL INTERACTION, and CLARITY.
+
+================================================
+DESIGN GOAL
+================================================
+
+Transform the dashboard into a:
+- 3D‑feeling, depth‑rich, futuristic AI operations console
+- Highly interactive and intuitive experience
+- Judge‑friendly (easy to understand in 30 seconds)
+- Analyst‑friendly (clear reasoning, actions, outcomes)
+
+This should feel like:
+- Stripe Radar
+- Palantir Foundry
+- Tesla Autopilot UI
+- Cyberpunk‑style command center
+
+================================================
+NEW USER EXPERIENCE (NUX) – CRITICAL
+================================================
+
+Design a FIRST‑TIME USER FLOW:
+
+1) Welcome Overlay (one‑time)
+   - Short intro: “Sentinel AI monitors, investigates, and blocks risky payments in real time”
+   - Animated highlights pointing to:
+     - Live monitoring
+     - Investigate button
+     - Agent Neural Feed
+   - Skip / Continue buttons
+
+2) Guided Tour Mode
+   - Step‑by‑step tooltips explaining:
+     - What risk score means
+     - What investigation does
+     - What blocking does
+   - Tooltips should be dismissible
+
+3) Empty / Initial State Design
+   - When no alerts / investigations exist:
+     - Show “All systems normal” with subtle animations
+     - NOT blank screens
+
+================================================
+3D / DEPTH‑BASED UI STYLE
+================================================
+
+Apply a 3D‑like visual system using:
+
+- Glassmorphism (blurred panels)
+- Soft shadows + inner shadows
+- Layered cards with z‑depth
+- Subtle parallax on hover
+- Micro‑animations on state change
+
+Examples:
+- Cards slightly lift on hover
+- Buttons depress on click
+- Status badges glow subtly
+
+================================================
+SIDEBAR & NAVIGATION REVAMP
+================================================
+
+Redesign sidebar to:
+
+- Clearly separate:
+  - Monitoring
+  - Operations
+  - Intelligence
+- Add icons + labels
+- Highlight current tab with glow + depth
+- Smooth animated transitions between tabs
+
+Add new tabs visually:
+- Investigations
+- Blocked Transactions
+- Agent Decisions / Reasoning
+
+================================================
+LIVE MONITORING UX
+================================================
+
+Redesign Live Monitoring to show:
+
+- A “heartbeat” style animation for live data
+- 3D metric cards:
+  - TPS
+  - Fraud Rate
+  - Failure Rate
+- Live graph with smooth transitions
+- Clear “System Mode” indicator:
+... (111 lines left)

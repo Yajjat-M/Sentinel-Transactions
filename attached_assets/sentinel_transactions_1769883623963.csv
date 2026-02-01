@@ -1,0 +1,21 @@
+transaction_id,timestamp,merchant,amount,bank,payment_method,risk_score,fraud_probability,status,retry_count,latency_ms
+T001,2026-01-31 10:01,Amazon,72.29,HDFC,Card,7,0.12,Processed,0,120
+T002,2026-01-31 10:02,Walmart,71.25,HDFC,UPI,11,0.25,Processed,1,180
+T003,2026-01-31 10:03,Apple,8.34,ICICI,Card,14,0.42,Processed,0,95
+T004,2026-01-31 10:04,Starbucks,46.27,HDFC,UPI,15,0.55,Processed,2,260
+T005,2026-01-31 10:05,Netflix,79.98,SBI,Card,8,0.18,Processed,0,110
+T006,2026-01-31 10:06,Amazon,91.30,HDFC,UPI,18,0.78,Failed,3,410
+T007,2026-01-31 10:07,Walmart,41.06,HDFC,Card,0,0.03,Processed,0,90
+T008,2026-01-31 10:08,Apple,16.83,ICICI,UPI,11,0.22,Processed,1,160
+T009,2026-01-31 10:09,Flipkart,220.50,HDFC,Card,22,0.91,Failed,4,520
+T010,2026-01-31 10:10,Swiggy,14.99,SBI,UPI,6,0.09,Processed,0,100
+T011,2026-01-31 10:11,Amazon,350.75,HDFC,Card,24,0.94,Failed,5,610
+T012,2026-01-31 10:12,Walmart,89.40,ICICI,UPI,9,0.17,Processed,0,130
+T013,2026-01-31 10:13,Apple,999.99,HDFC,Card,30,0.98,Failed,6,740
+T014,2026-01-31 10:14,Netflix,12.99,SBI,UPI,4,0.05,Processed,0,90
+T015,2026-01-31 10:15,Starbucks,62.80,HDFC,UPI,16,0.63,Processed,2,280
+T016,2026-01-31 10:16,Flipkart,420.00,HDFC,Card,28,0.96,Failed,5,680
+T017,2026-01-31 10:17,Swiggy,19.50,ICICI,UPI,5,0.08,Processed,0,105
+T018,2026-01-31 10:18,Amazon,58.99,SBI,Card,10,0.21,Processed,1,145
+T019,2026-01-31 10:19,Walmart,210.45,HDFC,UPI,21,0.88,Failed,4,560
+T020,2026-01-31 10:20,Apple,1099.00,HDFC,Card,32,0.99,Failed,6,790

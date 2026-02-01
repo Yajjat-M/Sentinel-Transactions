@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark Fintech Palette */
+  --background: 222 47% 11%;     /* Deep Blue/Slate Background */
+  --foreground: 210 40% 98%;     /* Bright White Text */
+  
+  --card: 217 33% 17%;           /* Lighter Slate for Cards */
+  --card-foreground: 210 40% 98%;
+  
+  --popover: 222 47% 11%;
+  --popover-foreground: 210 40% 98%;
+  
+  --primary: 210 100% 50%;       /* Electric Blue */
+  --primary-foreground: 210 40% 98%;
+  
+  --secondary: 217 19% 27%;      /* Muted Slate */
+  --secondary-foreground: 210 40% 98%;
+  
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20% 65%;
+  
+  --accent: 180 100% 50%;        /* Cyan Accent for Data */
+  --accent-foreground: 222 47% 11%;
+  
+  --destructive: 0 84% 60%;      /* Red for Fraud/Blocked */
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217 33% 25%;
+  --input: 217 33% 25%;
+  --ring: 212 100% 50%;
+  
+  --radius: 0.75rem;
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  /* Status Colors */
+  --status-success: 142 71% 45%;
+  --status-warning: 38 92% 50%;
+  --status-error: 0 84% 60%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background-image: 
+      radial-gradient(at 0% 0%, hsl(222, 47%, 15%) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, hsl(222, 47%, 15%) 0px, transparent 50%);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/50 backdrop-blur-xl border border-white/5 shadow-xl;
+  }
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  .text-glow {
+    text-shadow: 0 0 10px currentColor;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-secondary rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-secondary/80;
+}

@@ -1,0 +1,194 @@
+You are a senior full‑stack AI engineer and agentic systems architect.
+
+I already have a fintech AI agent dashboard (Sentinel AI) built in Replit.
+The UI loads correctly and a dataset will be uploaded manually (CSV).
+
+Your task is to FIX, COMPLETE, and EXTEND the system so it becomes a fully
+working AGENTIC AI with all dashboard tabs, buttons, and workflows functional.
+
+================================================
+DATASET CONTEXT (VERY IMPORTANT)
+================================================
+
+A CSV dataset with ~100 transactions will be uploaded.
+Each row represents a payment transaction.
+
+Expected columns:
+- transaction_id
+- timestamp
+- merchant
+- amount
+- bank
+- payment_method
+- risk_score
+- fraud_probability
+- status (Processed / Failed)
+- retry_count
+- latency_ms
+
+Your code MUST automatically adapt to this dataset and use it as the live
+transaction source for the agent.
+
+================================================
+CORE AGENT LOOP (MANDATORY)
+================================================
+
+Implement a REAL continuous background agent loop:
+
+OBSERVE → REASON → DECIDE → ACT → LEARN
+
+The agent must:
+- Start automatically when the server starts
+- Process the uploaded dataset continuously
+- Update system state every few seconds
+- NOT depend on button clicks to run
+
+================================================
+OBSERVE
+================================================
+
+Continuously monitor:
+- All transactions in dataset
+- Failed transactions
+- High risk_score transactions
+- fraud_probability spikes
+- Bank‑wise failure spikes
+- High retry_count or latency_ms
+
+================================================
+REASON (EXPLICIT HYPOTHESES)
+================================================
+
+Generate human‑readable hypotheses such as:
+
+- "HDFC bank failure spike detected → possible bank downtime"
+- "High fraud probability cluster detected → possible fraud attack"
+- "High retry count detected → retry storm or network instability"
+
+Each hypothesis must include:
+- Evidence
+- Confidence score
+- Affected transactions
+
+================================================
+DECIDE
+================================================
+
+Based on reasoning, decide:
+- Allow transaction
+- Flag for investigation
+- Block transaction
+- Generate alert
+
+Risk levels:
+LOW / MEDIUM / HIGH / CRITICAL
+
+================================================
+ACT
+================================================
+
+Actions must:
+- Change transaction state
+- Log reasoning
+- Update dashboard immediately
+
+Examples:
+- Move transaction to investigation queue
+- Block transaction
+- Generate alert
+
+================================================
+LEARN
+================================================
+
+Track:
+- False positives
+- Resolved investigations
+- Blocked transaction outcomes
+
+Automatically adjust:
+- Risk thresholds
+- Fraud sensitivity
+
+================================================
+DASHBOARD FIXES (MANDATORY)
+================================================
+
+Make ALL sidebar tabs functional:
+
+1. LIVE MONITORING
+   - Live stats from dataset
+   - Auto refresh
+   - Agent status (NORMAL / INVESTIGATION)
+
+2. TRANSACTIONS
+   - Show all transactions
+   - Filter by status and risk
+   - Investigate button must work
+
+3. ALERTS
+   - Show alerts with reason, severity, timestamp
+
+4. INVESTIGATIONS (NEW TAB)
+   - Show transactions under investigation
+   - Show reason, start time, status
+   - Allow resolve / block
+
+5. BLOCKED TRANSACTIONS (NEW TAB)
+   - Show blocked transactions
+   - Show reason for blocking
+   - Show action taken by agent
+
+================================================
+INVESTIGATE BUTTON (CRITICAL)
+================================================
+
+When "Investigate" is clicked:
+- Mark transaction as UNDER_INVESTIGATION
+- Move it to Investigations tab
+- Store agent reasoning
+- Update dashboard immediately
+
+================================================
+STATE MANAGEMENT
+================================================
+
+Maintain shared in‑memory state for:
+- Transactions
+- Investigations
+- Blocked transactions
+- Alerts
+- Agent mode
+
+================================================
+FRONTEND ↔ BACKEND
+================================================
+
+Ensure:
+- All buttons are wired
+- APIs return valid JSON
+- Dashboard auto‑refreshes
+- No dead or placeholder UI
+
+================================================
+CODE RULES
+================================================
+
+- Do NOT redesign UI
+- Do NOT rewrite everything
+- Fix and extend existing code
+- Add comments where logic is added
+
+================================================
+FINAL GOAL
+================================================
+
+The system must behave like a real fintech operations AI:
+- Continuous
+- Explainable
+- Action‑taking
+- Learnable
+- Demo‑ready
+
+Proceed step‑by‑step:
+Diagnose → Fix → Integrate → Validate
